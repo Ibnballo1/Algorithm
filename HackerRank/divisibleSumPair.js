@@ -16,7 +16,28 @@ function divisibleSumPairs(n, k, ar) {
   for (let i = 0; i < n; i++) {
     for (let j = 0; j < n; j++) {
         if ((i < j) && (i !== j)) {
-          if ((ar[i] + ar[j]) % k === 0) {
+          if ((ar[i] + ar[j]) % k === 0) {/*
+ * Complete the 'bonAppetit' function below.
+ *
+ * The function accepts following parameters:
+ *  1. INTEGER_ARRAY bill
+ *  2. INTEGER k
+ *  3. INTEGER b
+ */
+
+function bonAppetit(bill, k, b) {
+  // Write your code here
+  let totalBill = 0;
+  const rejectedBill = bill[k];
+  for(let i = 0; i < bill.length; i++) {
+    totalBill += bill[i]
+  }
+  let annaBill = (totalBill - rejectedBill) / 2;
+  console.log((annaBill === b)
+    ? "Bon Appetit"
+    : Math.abs(b - annaBill));
+}
+
             counter += 1
           }
         }
