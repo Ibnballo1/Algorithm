@@ -13,52 +13,6 @@ function pageCount(n, p) {
   let count2 = 0;
   let countFromFirstPage = 0;
   let countFromBackPage = 0;
-  // if total number of pages (n) is odd
-  // if (n % 2 !== 0) {
-  //   // turning from the front page (1)
-  //   for (let i = 1; i <= n; i += 2) {
-  //     if (i === p || i - 1 === p) {
-  //       countFromFirstPage = count;
-  //     }
-  //     count += 1;
-  //   }
-
-  //   // turning from the back page (n)
-  //   for (let j = n - 1; j >= 1; j -= 2) {
-  //     if (j === p || j + 1 === p) {
-  //       countFromBackPage = count2;
-  //     }
-  //     count2 += 1;
-  //   }
-
-  //   // find the minimum number between turning from the front and from the back
-  //   countFromFirstPage > countFromBackPage
-  //     ? console.log(countFromBackPage)
-  //     : console.log(countFromFirstPage);
-  // }
-
-  // // if total number of pages (n) is even
-  // if (n % 2 === 0) {
-  //   // turning from the front page (1)
-  //   for (let i = 1; i <= n; i += 2) {
-  //     if (i === p || i - 1 === p) {
-  //       countFromFirstPage = count;
-  //     }
-  //     count += 1;
-  //   }
-
-  //   // turning from the back page (n)
-  //   for (let j = n; j >= 1; j -= 2) {
-  //     if (j === p || j + 1 === p) {
-  //       countFromBackPage = count2;
-  //     }
-  //     count2 += 1;
-  //   }
-  //   // find the minimum number between turning from the front and from the back
-  //   countFromFirstPage > countFromBackPage
-  //     ? console.log(countFromBackPage)
-  //     : console.log(countFromFirstPage);
-  // }
 
   // if total number of pages is either odd or even
   // turning from first page
