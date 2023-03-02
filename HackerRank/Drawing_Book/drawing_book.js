@@ -39,6 +39,7 @@ function pageCount(n, p) {
       count2 += 1;
     }
   }
+
   // find the minimum number between turning from the front and from the back
   countFromFirstPage > countFromBackPage
     ? console.log(countFromBackPage)
@@ -46,6 +47,7 @@ function pageCount(n, p) {
 }
 
 pageCount(10, 9); // Output: 1
-pageCount(5, 3); // Output: 1
-pageCount(6, 2); // Output: 1
-pageCount(5, 4); // Output: 0
+// pageCount(5, 3); // Output: 1
+// pageCount(6, 2); // Output: 1
+// pageCount(5, 4); // Output: 0
+// pageCount(10, 9); // Output: 1
