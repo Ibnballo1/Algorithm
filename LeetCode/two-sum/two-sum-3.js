@@ -7,7 +7,7 @@ function twoSum(nums, target) {
   let leftPt = 0; // the first pointer is at index 0
   let rightPt = nums.length - 1; // the second pointer is at last index
 
-  while (leftPt <= rightPt) {
+  while (leftPt < rightPt) {
     const sum = nums[leftPt] + nums[rightPt];
     if (sum === target) {
       return [leftPt, rightPt];
